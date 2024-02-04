@@ -64,6 +64,7 @@ app.post("/upload", upload.single("file"), async (req, res) => {
       try {
        
         const response = await cloudinary.uploader.upload(req.file.path, {
+          folder: "Posts",
           public_id: req.file.filename,
         });
         console.log(response.url);
