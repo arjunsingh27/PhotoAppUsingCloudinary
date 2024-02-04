@@ -26,7 +26,7 @@ const PhotoDetail = () => {
 
   useEffect(() => {
     fetchPhoto();
-  }, [id]); // Include 'id' in the dependency array
+  }, [id]);  
 
   return (
     <>
@@ -49,7 +49,7 @@ const PhotoDetail = () => {
       ) : (
         <div>
           <h2 className="text-center mt-10 text-xl md:text-3xl">
-            Photo Detail
+            
           </h2>
           {photo ? (
             <ImageDetailCard photo={photo} />
