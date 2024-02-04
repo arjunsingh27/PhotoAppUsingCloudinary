@@ -26,7 +26,7 @@ const Gallery = () => {
   return (
     <>
       {loading ? (
-        <div className="w-full flex flex-col items-center justify-center h-screen bg-slate-500 ">
+        <div className="w-full flex flex-col items-center justify-center h-max bg-slate-500 ">
           <p className="text-xl">Loading</p>
           <div>
             <ThreeDots
@@ -42,7 +42,7 @@ const Gallery = () => {
           </div>
         </div>
       ) : (
-        <div className=" overflow-hidden bg-slate-500 h-screen">
+        <div className="bg-slate-500 h-max">
           <h2 className="text-center mt-10 text-2xl md:text-3xl ">Gallery</h2>
           <div className="image-container md:m-10 grid md:grid-cols-3  w-full m-5">
             {images.map((image) => (
