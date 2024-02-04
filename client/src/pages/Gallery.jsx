@@ -24,7 +24,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <>
+    < className="bg-slate-400">
       {loading ? (
         <div className="w-full flex flex-col items-center justify-center h-screen">
           <p className="text-xl">Loading</p>
