@@ -10,7 +10,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch("http://localhost:3000/photos");
+        const response = await fetch("https://photomanagementapp.onrender.com/photos");
         const data = await response.json();
         setImages(data);
         setLoading(false);
