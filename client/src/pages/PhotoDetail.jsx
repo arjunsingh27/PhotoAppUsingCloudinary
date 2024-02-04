@@ -10,7 +10,7 @@ const PhotoDetail = () => {
 
   const fetchPhoto = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/photos/${id}`);
+      const response = await fetch(`https://photomanagementapp.onrender.com/photos/${id}`);
       console.log('Response status:', response.status);
 
       const data = await response.json();
