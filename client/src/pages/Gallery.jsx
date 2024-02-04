@@ -24,9 +24,9 @@ const Gallery = () => {
   }, []);
 
   return (
-  <div className="bg-slate-200">
+  <div className="">
       {loading ? (
-        <div className="w-full flex flex-col items-center justify-center h-max  ">
+        <div className="w-full flex flex-col items-center justify-center min-h-dvh h-max  ">
           <p className="text-xl">Loading</p>
           <div>
             <ThreeDots
@@ -42,7 +42,7 @@ const Gallery = () => {
           </div>
         </div>
       ) : (
-        <div className=" h-max">
+        <div className=" min-h-dvh h-max">
           <h2 className="text-center mt-10 text-2xl md:text-3xl ">Gallery</h2>
           <div className="image-container md:m-10 grid md:grid-cols-3  w-full m-5">
             {images.map((image) => (
